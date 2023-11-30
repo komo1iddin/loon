@@ -1,0 +1,6 @@
+#!name=AppStore Limited App
+#!desc=AppStore Limited App Notification
+#!homepage=
+
+[Script]
+cron "17 17 17 ? * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/appsdoor.js, timeout=10, tag=AppStore Limited App
