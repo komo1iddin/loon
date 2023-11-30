@@ -1,0 +1,20 @@
+﻿#!name=uScan
+
+#!desc=uScan subscription unlock
+
+#!homepage=
+
+#!author=komo1iddin
+
+#!icon=
+
+[Script]
+
+http-response https://events-prod.lopofist.limited/v3/subscription/validate script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/uScan.js,requires-body=1,max-size=0
+
+
+
+[MITM]
+
+hostname = events-prod.lopofist.limited
+
