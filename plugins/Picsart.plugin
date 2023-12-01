@@ -1,0 +1,20 @@
+﻿#!name=Picsart
+
+#!desc=Picsart gold unlock
+
+#!homepage=
+
+#!author=
+
+#!icon=https://github.com/komo1iddin/loon/blob/main/icons/Agenda.png?raw=true
+
+[Script]
+
+http-response https://api.(meiease|picsart).(cn|com)/shop/subscription/apple/purchases script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Agenda.js,requires-body=1,max-size=0
+
+
+
+[MITM]
+
+hostname = api.meiease.*,api.picsart.*
+
