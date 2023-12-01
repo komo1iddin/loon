@@ -10,7 +10,7 @@
 
 [Script]
 
-http-response ^https:\/\/accounts\.agenda\.com\/users\/[A-Za-z0-9-]+\/license$ script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/uScan.js,requires-body=1,max-size=0
+http-response ^https:\/\/accounts\.agenda\.com\/users\/[A-Za-z0-9-]+\/license$ script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Agenda.js,requires-body=1,max-size=0
 
 
 
