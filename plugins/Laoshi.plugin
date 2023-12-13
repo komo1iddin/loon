@@ -6,11 +6,11 @@
 
 #!author=
 
-#!icon=https://github.com/komo1iddin/loon/blob/main/icons/Reverso.png?raw=true
+#!icon=https://github.com/komo1iddin/loon/blob/main/icons/Laoshi.png?raw=true
 
 [Script]
 
-http-response https://apirevenue.laoshi.io/v1/receipts script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Reverso.js,requires-body=1,max-size=0
+http-response https://apirevenue.laoshi.io/v1/receipts script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Laoshi.js,requires-body=1,max-size=0
 
 
 
