@@ -30,6 +30,3 @@ obj = {
 };
 body = JSON.stringify(obj);
 $done({body: body});
-
-body = JSON.stringify(obj);
-$done({body: body});

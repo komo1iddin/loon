@@ -1,0 +1,20 @@
+﻿#!name=Daylite
+
+#!desc=Daylite business subscription
+
+#!homepage=
+
+#!author=komo1iddin
+
+#!icon=
+
+[Script]
+
+http-response https://api.marketcircle.net/v2/accounts/subscriptions/current script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Daylite.js,requires-body=1,max-size=0
+
+
+
+[MITM]
+
+hostname = api.marketcircle.net
+
