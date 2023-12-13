@@ -1,20 +1,20 @@
-﻿#!name=Daylite
+﻿#!name=Reverso
 
-#!desc=Daylite business subscription
+#!desc=Reverso monthly subscription
 
 #!homepage=
 
 #!author=komo1iddin
 
-#!icon=
+#!icon=https://github.com/komo1iddin/loon/blob/main/icons/Reverso.png?raw=true
 
 [Script]
 
-http-response https://api.marketcircle.net/v2/accounts/subscriptions/current script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Daylite.js,requires-body=1,max-size=0
+http-response https://account.reverso.net/api/v1/user/get script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Reverso.js,requires-body=1,max-size=0
 
 
 
 [MITM]
 
-hostname = api.marketcircle.net
+hostname = account.reverso.net
 
