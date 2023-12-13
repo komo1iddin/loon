@@ -1,8 +1,5 @@
 var body = $response.body;
 var obj = JSON.parse(body);
-
-var body = $response.body;
-var obj = JSON.parse(body);
 obj = {
   "premiumPlatform": "IOS",
   "thirdLanguage": -1,
