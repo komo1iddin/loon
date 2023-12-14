@@ -1,6 +1,3 @@
-https://createpdf.acrobat.com/createpdf/api/users/me/subscriptions
-
-
 var body = $response.body;
 var obj = JSON.parse(body);
 obj = {
