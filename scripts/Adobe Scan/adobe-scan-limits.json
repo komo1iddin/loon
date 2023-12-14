@@ -1,0 +1,6 @@
+https://createpdf.acrobat.com/createpdf/api/users/me/limits/acrobat
+
+{
+  "acrobat_pro": true,
+  "acrobat_std": true
+}
