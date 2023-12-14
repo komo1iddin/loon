@@ -1,22 +1,22 @@
-﻿#!name= iRingo for TestFlight
+﻿#!name= Surfshark VPN
 
-#!desc=1. Customize TestFlight login store region 2. Multi-account saving and switching (need to configure BoxJs to use) 3. Make universal apps installable on any Apple processor device
-
-#!name= iRingo: ✈ TestFlight
-#!desc=1. Customize TestFlight login to store area 2. Save and switch multiple accounts (requires BoxJs configuration) 3. Enable universal applications to be installed on any Apple processor device
-#!openUrl=http://boxjs.com/#/app/iRingo.TestFlight
+#!desc=Unlock Surfshark VPN subscription
+#!openUrl=
 #!author=
-#!homepage=https://github.com/VirgilClyne
-#!manual=https://github.com/VirgilClyne/iRingo/wiki/✈-TestFlight
-#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight_2.png
+#!homepage=
+#!manual=
+#!icon=
 
 [General]
-skip-proxy = iosapps.itunes.apple.com
+
 
 [Script]
-http-request ^https?:\/\/testflight\.apple\.com\/(.+)(\?.*)?$ script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/TestFlight.request.js, requires-body=true, tag=✈ TestFlight.request, argument=
-http-response ^https?:\/\/testflight\.apple\.com\/(.+)(\?.*)?$ script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/TestFlight.response.js, requires-body=true, tag=✈ TestFlight.response, argument=
+http-response ^https:\/\/api\.booktable82\.com\/v1\/payment\/subscriptions\/current$ script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Surfshark/subscriptions.js, requires-body=true
+http-response ^https:\/\/api\.booktable82\.com\/v1\/account\/users\/public-keys\/validate.* script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Surfshark/public-keys-validate.js, requires-body=true
+http-response ^https:\/\/api\.booktable82\.com\/v1\/server\/user$ script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Surfshark/server-user.js, requires-body=true
+
+
 
 [MITM]
-hostname = testflight.apple.com
+hostname = api.booktable82.com/
 
