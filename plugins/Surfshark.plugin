@@ -18,5 +18,5 @@ http-response ^https:\/\/api\.booktable82\.com\/v1\/server\/user$ script-path=ht
 
 
 [MITM]
-hostname = api.booktable82.com/
+hostname = api.booktable82.com
 
