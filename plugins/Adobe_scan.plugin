@@ -5,18 +5,18 @@
 #!author=
 #!homepage=
 #!manual=
-#!icon=
+#!icon=https://github.com/komo1iddin/loon/blob/main/icons/Adobe%20Scan.png?raw=true
 
 [General]
 
 
 [Script]
-http-response ^https:\/\/createpdf\.acrobat\.com\/createpdf\/api\/users\/me\/subscriptions$ script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Surfshark/subscriptions.js, requires-body=true
-http-response ^https:\/\/createpdf\.acrobat\.com\/createpdf\/api\/users\/me\/limits\/acrobat$ script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Surfshark/public-keys-validate.js, requires-body=true
-http-response ^https:\/\/dc-api\.adobe\.io\/\d+\/users\/self\/limits\/conversions$ script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Surfshark/server-user.js, requires-body=true
+http-response ^https:\/\/createpdf\.acrobat\.com\/createpdf\/api\/users\/me\/subscriptions$ script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Adobe%20Scan/adobe-scan-subscriptions.js, requires-body=true
+http-response ^https:\/\/createpdf\.acrobat\.com\/createpdf\/api\/users\/me\/limits\/acrobat$ script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Adobe%20Scan/adobe-scan-limits.js, requires-body=true
+http-response ^https:\/\/dc-api\.adobe\.io\/\d+\/users\/self\/limits\/conversions$ script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Adobe%20Scan/adobe-scan-conversions.js, requires-body=true
 
 
 
 [MITM]
-hostname = api.computertable82.com
+hostname = createpdf.acrobat.com, dc-api.adobe.io
 
