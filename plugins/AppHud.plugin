@@ -11,8 +11,8 @@
 
 
 [Script]
-http-response https://api.apphud.com/v1/customers(?!\/(push_token|attribution)) script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/AppHud/AppHudPaywalls.js, requires-body=true
-http-request  https://api.apphud.com/v1/customers(?!\/(push_token|attribution)) script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/AppHud/AppHud.js, requires-body=true
+http-response https://api.apphud.com/v1/customers(?!\/(push_token|attribution)) script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/AppHud/AppHud.js, requires-body=true
+http-request  https://api.apphud.com/v1/customers(?!\/(push_token|attribution)) script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/AppHud/AppHudPaywalls.js, requires-body=true
 
 
 [URL Rewrite]
