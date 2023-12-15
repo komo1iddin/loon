@@ -1,11 +1,20 @@
-﻿# Loon module for ELSA Speak hack
-# Need to be enabled: Always  │  Subscription needed: ✖️
-# Icon: https://i.imgur.com/dlQn7qD.jpg
-# Date: 22.10.2023
+﻿#!name=Elsa speak
+#!desc=Elsa unlock subscription
+#!openUrl=
+#!author=
+#!homepage=
+#!manual=
+#!icon=https://github.com/komo1iddin/loon/blob/main/icons/Adobe%20Scan.png?raw=true
+
+
 [General]
 bypass-system = false
 bypass-tun = false
+
+
 [Script]
-http-response ^https://.*\.elsanow\.io/(entitlement/api|user/api/v2/purchase) script-path=https://www.dropbox.com/scl/fi/43qwy1deuetfi3tp7n50d/ELSA.js?rlkey=v7msvffn2z00lipm7m4kjen40&dl=1, requires-body=true, timeout=10, tag=ELSA Speak, img-url=https://i.imgur.com/dlQn7qD.jpg
-[Mitm]
-hostname = %APPEND%pool.elsanow.io
+http-response ^https://.*\.elsanow\.io/(entitlement/api|user/api/v2/purchase) script-path=https://www.dropbox.com/scl/fi/43qwy1deuetfi3tp7n50d/ELSA.js?rlkey=v7msvffn2z00lipm7m4kjen40&dl=1, requires-body=true, timeout=10
+
+
+[MITM]
+hostname = pool.elsanow.io
