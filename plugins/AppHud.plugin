@@ -18,7 +18,7 @@ http-request ^https://api.apphud.com/v1/customers(?!\/(push_token|attribution)) 
 
 
 [URL Rewrite]
-^https://api.apphud.com/v1/subscriptions$ url 302 header Location https://api.apphud.com/v1/customers
+^https://api.apphud.com/v1/subscriptions$ url 302 https://api.apphud.com/v1/customers
 
 
 [MITM]
