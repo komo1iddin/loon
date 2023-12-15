@@ -8,11 +8,13 @@
 #!icon=https://github.com/komo1iddin/loon/blob/main/icons/AppHud.png?raw=true
 
 [General]
+bypass-system = false
+bypass-tun = false
 
 
 [Script]
-http-response https://api.apphud.com/v1/customers(?!\/(push_token|attribution)) script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/AppHud/AppHud.js, requires-body=true
-http-request  https://api.apphud.com/v1/customers(?!\/(push_token|attribution)) script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/AppHud/AppHudPaywalls.js, requires-body=true
+http-response ^https://api.apphud.com/v1/customers(?!\/(push_token|attribution)) script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/AppHud/AppHud.js, requires-body=true, timeout=10, tag=AppHud,
+http-request ^https://api.apphud.com/v1/customers(?!\/(push_token|attribution)) script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/AppHud/AppHudPaywalls.js, requires-body=true, timeout=10, tag=AppHudPaywalls
 
 
 [URL Rewrite]
@@ -21,4 +23,3 @@ http-request  https://api.apphud.com/v1/customers(?!\/(push_token|attribution)) 
 
 [MITM]
 hostname = api.apphud.com
-
