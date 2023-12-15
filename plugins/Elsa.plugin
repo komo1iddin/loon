@@ -1,0 +1,11 @@
+﻿# Loon module for ELSA Speak hack
+# Need to be enabled: Always  │  Subscription needed: ✖️
+# Icon: https://i.imgur.com/dlQn7qD.jpg
+# Date: 22.10.2023
+[General]
+bypass-system = false
+bypass-tun = false
+[Script]
+http-response ^https://.*\.elsanow\.io/(entitlement/api|user/api/v2/purchase) script-path=https://www.dropbox.com/scl/fi/43qwy1deuetfi3tp7n50d/ELSA.js?rlkey=v7msvffn2z00lipm7m4kjen40&dl=1, requires-body=true, timeout=10, tag=ELSA Speak, img-url=https://i.imgur.com/dlQn7qD.jpg
+[Mitm]
+hostname = %APPEND%pool.elsanow.io
