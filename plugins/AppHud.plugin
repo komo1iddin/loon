@@ -5,18 +5,20 @@
 #!author=
 #!homepage=
 #!manual=
-#!icon=https://github.com/komo1iddin/loon/blob/main/icons/Surfshark.png?raw=true
+#!icon=https://github.com/komo1iddin/loon/blob/main/icons/AppHud.png?raw=true
 
 [General]
 
 
 [Script]
-http-response ^https:\/\/api\.computertable82\.com\/v1\/payment\/subscriptions\/current$ script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Surfshark/subscriptions.js, requires-body=true
-http-response ^https:\/\/api\.computertable82\.com\/v1\/account\/users\/public-keys\/validate.* script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Surfshark/public-keys-validate.js, requires-body=true
-http-response ^https:\/\/api\.computertable82\.com\/v1\/server\/user$ script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/Surfshark/server-user.js, requires-body=true
+http-response https://api.apphud.com/v1/customers(?!\/(push_token|attribution)) script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/AppHud/AppHudPaywalls.js, requires-body=true
+http-request  https://api.apphud.com/v1/customers(?!\/(push_token|attribution)) script-path=https://raw.githubusercontent.com/komo1iddin/loon/main/scripts/AppHud/AppHud.js, requires-body=true
 
+
+[URL Rewrite]
+^https://api.apphud.com/v1/subscriptions$ url 302 header Location https://api.apphud.com/v1/customers
 
 
 [MITM]
-hostname = api.computertable82.com
+hostname = api.apphud.com
 
