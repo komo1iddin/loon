@@ -13,7 +13,7 @@ obj = {
   "InterfaceLanguage": 1049,
   "subscriptionDate": "2023-12-12T15:52:42.988649",
   "secondLanguage": -1,
-  "premiumSubscriptionDate": "2023-12-19T15:52:27",
+  "premiumSubscriptionDate": "2099-12-19T15:52:27",
   "uniqueId": "3cd1d9c8-b3d1-4518-9456-13a047de1740",
   "pictureLarge": null,
   "isFemale": false,
